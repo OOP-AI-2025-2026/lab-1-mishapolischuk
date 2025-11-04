@@ -19,7 +19,7 @@ public class MainTest {
         main = new Main();
     }
 
-    // IcyHot
+
     @ParameterizedTest
     @MethodSource("icyHotProvider")
     public void icyHot(int first, int second, boolean expected) {
@@ -36,7 +36,7 @@ public class MainTest {
                 arguments(120, 120, false));
     }
 
-    // in1020
+
     @ParameterizedTest
     @MethodSource("in1020Provider")
     public void in1020(int first, int second, boolean expected) {
@@ -54,7 +54,7 @@ public class MainTest {
                 arguments(9, 9, false));
     }
 
-    // hasTeen
+
     @ParameterizedTest
     @MethodSource("hasTeenProvider")
     public void hasTeen(int first, int second, int third, boolean expected) {
@@ -76,7 +76,7 @@ public class MainTest {
                 arguments(11, 22, 22, false));
     }
 
-    // sleepIn
+
     @ParameterizedTest
     @MethodSource("sleepInProvider")
     public void sleepIn(boolean first, boolean second, boolean expected) {
@@ -91,7 +91,7 @@ public class MainTest {
                 arguments(true, true, true));
     }
 
-    // monkeyTrouble
+
     @ParameterizedTest
     @MethodSource("monkeyTroubleProvider")
     public void monkeyTrouble(boolean first, boolean second, boolean expected) {
@@ -106,7 +106,7 @@ public class MainTest {
                 arguments(false, true, false));
     }
 
-    // posNeg
+
     @ParameterizedTest
     @MethodSource("posNegProvider")
     public void posNeg(int first, int second, boolean third, boolean expected) {
@@ -136,7 +136,7 @@ public class MainTest {
                 arguments(-5, -5, true, true));
     }
 
-    // arrayCount9
+
     @ParameterizedTest
     @MethodSource("arrayCount9Provider")
     public void arrayCount9(int[] array, int expected) {
@@ -154,7 +154,7 @@ public class MainTest {
                 arguments(new int[]{9, 2, 4, 3, 1}, 1));
     }
 
-    // arrayFront9
+
     @ParameterizedTest
     @MethodSource("arrayFront9Provider")
     public void arrayFront9(int[] array, boolean expected) {
@@ -177,7 +177,7 @@ public class MainTest {
                 arguments(new int[]{3, 9, 2, 3, 3}, true));
     }
 
-    // array123
+
     @ParameterizedTest
     @MethodSource("array123Provider")
     public void array123(int[] array, boolean expected) {
@@ -198,7 +198,7 @@ public class MainTest {
                 arguments(new int[]{}, false));
     }
 
-    // helloName
+
     @ParameterizedTest
     @MethodSource("helloNameProvider")
     public void helloName(String name, String expected) {
@@ -219,7 +219,7 @@ public class MainTest {
                 arguments("Hello", "Hello Hello!"));
     }
 
-    // lastTwo
+
     @ParameterizedTest
     @MethodSource("lastTwoProvider")
     public void lastTwo(String str, String expected) {
@@ -235,7 +235,7 @@ public class MainTest {
                 arguments("", ""));
     }
 
-    // middleTwo
+
     @ParameterizedTest
     @MethodSource("middleTwoProvider")
     public void middleTwo(String str, String expected) {
